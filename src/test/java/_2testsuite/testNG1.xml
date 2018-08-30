@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="_2testsuite">
+	<test name="_1InitializeDatasource">
+		<classes>
+			<class name="_2testsuite._1InitializeDatasource" />
+		</classes>
+	</test>
+	<test name="_2OpenBrowser">
+		<classes>
+			<class name="_2testsuite._2OpenBrowser" />
+		</classes>
+	</test>
+	<test name="_3LoginTest">
+		<classes>
+			<class name="_2testsuite._3LoginTest" />
+		</classes>
+	</test>
+	<test name="_4CheckEmployeeOffdays">
+		<classes>
+			<class name="_2testsuite._4CheckEmployeeOffdays" />
+		</classes>
+	</test>
+	<test name="_5CloseFirefox">
+		<classes>
+			<class name="_2testsuite._5CloseFirefox" />
+		</classes>
+	</test>
+	<test name="_6TerminateDataSource">
+		<classes>
+			<class name="_2testsuite._6TerminateDataSource" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->
