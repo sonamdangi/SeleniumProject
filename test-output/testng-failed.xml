@@ -3,14 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="GroupIdP1.ArtifactIdP1.testNgsimple5_DataProvider_Excel">
+      <class name="GroupIdP1.ArtifactIdP1._23Test1withITestListeners3">
         <methods>
-          <include name="openBrowser"/>
-          <include name="closeBrower"/>
-          <include name="Login"/>
-          <include name="logout"/>
+          <include name="f1"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- GroupIdP1.ArtifactIdP1.testNgsimple5_DataProvider_Excel -->
+      </class> <!-- GroupIdP1.ArtifactIdP1._23Test1withITestListeners3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

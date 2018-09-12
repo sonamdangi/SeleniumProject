@@ -39,7 +39,7 @@ public class testNgsimple5_suite {
 	   System.out.println("logout from payroll application");
 	  }
 	  @AfterTest
-		public void startFirefox() {
+		public void closeFirefox() {
 			System.out.println("closing firefox");
 		}
 		@AfterClass

@@ -12,25 +12,32 @@ import org.testng.annotations.Test;
 
 public class testNgsimple5_DataProvider_Excel {
 	private WebDriver driver;
-	private String url;
+	//private String url;
 
 	@BeforeClass
 	public void openBrowser() {
 		System.setProperty("webdriver.gecko.driver", "C:\\Program Files\\geckodriver.exe");
-		url = "http://newtours.demoaut.com/";
-		driver = new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		//url = "http://newtours.demoaut.com/";
+		//driver = new FirefoxDriver();
+		
+		//WebDriver driver = new FirefoxDriver();
+		// TODO Auto-generated method stub
+				System.setProperty("webdriver.gecko.driver", "C:\\Program Files\\geckodriver.exe");
+				WebDriver driver = new FirefoxDriver();
+				driver.get("http://newtours.demoaut.com/");
 	}
 
 	@Test(dataProvider = "Paramters")
 	public void Login(String username, String password) {
-		driver.get(url + "/");
+		//driver.get(url);
+		//driver.get("http://newtours.demoaut.com/");
+		
 		driver.findElement(By.name("userName")).clear();
 		driver.findElement(By.name("userName")).sendKeys(username);
 		driver.findElement(By.name("password")).clear();
 		driver.findElement(By.name("password")).sendKeys(password);
 		driver.findElement(By.name("login")).click();
-
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
 	@Test(dependsOnMethods = "Login")
@@ -42,7 +49,7 @@ public class testNgsimple5_DataProvider_Excel {
 	public Object[][] Paramters() {
 		Object[][] testObjArray=null;
 		try {
-			testObjArray = ReadExcelData.getTableArray("C:\\Users\\LENOVO\\eclipse-workspace\\ArtifactIdP1\\src\\test\\java\\GroupIdP1\\ArtifactIdP1\\dataprovider.xls",
+			testObjArray = ReadExcelData.getTableArray("C:\\Users\\LENOVO\\eclipse-workspace\\ArtifactIdProg1\\src\\test\\java\\GroupIdProg1\\ArtifactIdProg1\\dataprovider1.xls",
 					"Sheet2");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -53,6 +60,6 @@ public class testNgsimple5_DataProvider_Excel {
 
 	@AfterClass
 	public void closeBrower() {
-		driver.quit();
+		//driver.quit();
 	}
 }
