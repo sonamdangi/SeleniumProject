@@ -1,7 +1,7 @@
 package Package1;
 
 public class ConfigBean {
-
+//th to be tested
 	
 	private String testfile;
 	private String keywordfile;
