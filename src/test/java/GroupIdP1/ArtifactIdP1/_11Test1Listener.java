@@ -10,7 +10,7 @@ public class _11Test1Listener implements ITestListener {
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
 		System.out.println("test start");
-		
+		Sytem.out.println("new demo code")
 	}
 
 	public void onTestSuccess(ITestResult result) {
