@@ -25,6 +25,7 @@ public class CellBean {
 
 	public void setHyperlink(HSSFHyperlink hyperlink) {
 		this.hyperlink = hyperlink;
+		Syso("Hello");
 	}
 
 	public int getCelltype() {
